@@ -59,13 +59,11 @@ let small = document.querySelectorAll(".singular");
 
 for(const i of small)
 {
-
     i.addEventListener('mouseenter', ()=>
     {
 
         i.style.backgroundColor = 'rgba('+rand_big()+','+rand_big()+','+rand_big()+')';
     });
-
 }
 
 input.addEventListener('click', ()=>
@@ -84,8 +82,6 @@ input.addEventListener('click', ()=>
         {
             iter.remove();
         }
-
-        console.log("hello")
 
 
         let n = prompt("Enter a number:");
@@ -114,10 +110,7 @@ input.addEventListener('click', ()=>
             
             
                     new_div.appendChild(temp_div);
-                }
-            
-            
-            
+                }          
             
                 main_div.appendChild(new_div);
             }
@@ -130,14 +123,12 @@ input.addEventListener('click', ()=>
             }
             
             let small = document.querySelectorAll(".singular");
-
-            let op = 0;
             
             for(const i of small)
             {
                 i.addEventListener('mouseenter', ()=>
                 {
-                    i.style.backgroundColor = 'rgb('+rand_big()+','+rand_big()+','+rand_big()+','+(op+0.1)+')';
+                    i.style.backgroundColor = 'rgb('+rand_big()+','+rand_big()+','+rand_big()+')';
                 });
             }
     }
